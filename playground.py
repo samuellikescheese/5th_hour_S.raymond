@@ -1,17 +1,10 @@
 print ("hello world")
-santalist=(4),(7),(2)
-print(santalist)
-
-
-
-
-
-
-
-
-
-
-
+print ("welcum two corect calender")
+print ("inpot too nums")
+x = input("")
+y = input("")
+print(f"{x+y}")
+print ("ther u goo")
 
 
 
