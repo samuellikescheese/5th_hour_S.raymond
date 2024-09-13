@@ -6,8 +6,6 @@ print("hello world")
 
 
 
-
-
 x = int (input(""))
 y = int (input(""))
 plus = (x+y)
