@@ -44,11 +44,11 @@ print (dragons["red"]["offence"],dragons["blue"]["offence"],dragons["green"]["of
 
 
 
-dragons["red"]["offence"] = input()
-dragons["blue"]["offence"] = input()
-dragons["green"]["offence"] = input()
-dragons["black"]["offence"] = input()
-dragons["white"]["offence"] = input()
+dragons["red"]["offence"] = input("new R")
+dragons["blue"]["offence"] = input("new Bu")
+dragons["green"]["offence"] = input("new G")
+dragons["black"]["offence"] = input("new Ba")
+dragons["white"]["offence"] = input("new W")
 
 print ("red,blue,green,black,white")
 print (dragons["red"]["offence"],dragons["blue"]["offence"],dragons["green"]["offence"],dragons["black"]["offence"],dragons["white"]["offence"],)
