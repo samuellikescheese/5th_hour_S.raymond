@@ -3,25 +3,29 @@
 #playground
 
 print("hello world")
+print ("1 = add")
+print ("2 = minus")
+print ("3 = mult")
+print ("4 = divide")
+a = int(input("What would You like to select?  :"))
+print("Enter 2 Numbers")
+x = int (input("1) "))
+y = int (input("2) "))
 
-
-
-x = int (input(""))
-y = int (input(""))
-plus = (x+y)
-minus = (x-y)
-times = (x*y)
-Divide = (x/y)
-
-
-
-print (plus)
-print (minus)
-print (times)
-print (Divide)
-
-
-
-
-
-print ("good")
+if a == 1:
+    plus = (x + y)
+    print (f"Your Answer is {plus} ")
+if a == 2:
+    plus = (x - y)
+    print (f"Your Answer is {plus} ")
+if a == 3:
+    plus = (x * y)
+    print (f"Your Answer is {plus} ")
+if a == 4:
+    plus = (x / y)
+    print (f"Your Answer is {plus} ")
+if a == 5:
+    plus = (x ** y)
+    print(f"Your Answer is {plus} ")
+else :
+    print("ERROR")
