@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="added senario.py">
-      <change afterPath="$PROJECT_DIR$/senario 2.py" afterDir="false" />
+    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="added HW5.py">
+      <change afterPath="$PROJECT_DIR$/HW6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,8 @@
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
+    "Python.HW5.executor": "Run",
+    "Python.HW6.executor": "Run",
     "Python.hello world.executor": "Run",
     "Python.playground.executor": "Run",
     "Python.senario 2.executor": "Run",
@@ -132,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726683402504</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added HW5.py">
+      <option name="closed" value="true" />
+      <created>1727460346036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727460346036</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -141,6 +150,7 @@
     <MESSAGE value="added HW3" />
     <MESSAGE value="added play" />
     <MESSAGE value="added senario.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="added senario.py" />
+    <MESSAGE value="added HW5.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added HW5.py" />
   </component>
 </project>
