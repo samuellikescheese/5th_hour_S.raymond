@@ -3,21 +3,32 @@
 #HW6
 
 print("hello world")
-
-wifi = 12
-login = 6
-admin = 7
+#def wifi ():
+#def login():
 
 
 
+time = 0
+wifi = True
+login = True
+admin = True
+if wifi == True :
+    if login == True :
+        if admin == True :
+            print ("welcome to this program")
+            time += 1
+        else :
+            print ("error admin")
+    else:
+        print("error login")
+else :
+    print ("error wifi")
 
-if wifi == times :
-    print ("good")
 
 
 
 
-print (10 > 5)
+
 
 
 
