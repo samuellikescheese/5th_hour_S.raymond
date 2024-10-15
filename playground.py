@@ -28,5 +28,4 @@ if a == 4:
 if a == 5:
     plus = (x ** y)
     print(f"Your Answer is {plus} ")
-else :
-    print("ERROR")
+

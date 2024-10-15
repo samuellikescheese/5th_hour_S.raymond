@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="added HW6.py">
+      <change afterPath="$PROJECT_DIR$/my stuff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/senario 3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW7.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW6.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground.py" beforeDir="false" afterPath="$PROJECT_DIR$/playground.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +58,10 @@
     &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
     &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
     &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
+    &quot;Python.my stuff.executor&quot;: &quot;Run&quot;,
     &quot;Python.playground.executor&quot;: &quot;Run&quot;,
     &quot;Python.senario 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.senario 3.executor&quot;: &quot;Run&quot;,
     &quot;Python.senario.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
@@ -170,5 +175,16 @@
     <MESSAGE value="added HW5.py" />
     <MESSAGE value="added HW6.py" />
     <option name="LAST_COMMIT_MESSAGE" value="added HW6.py" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
