@@ -13,8 +13,6 @@ elif temp > 10:
     print ("its mild")
 else :
     print ("its cold")
-
-
 print ("thank you")
 
 
