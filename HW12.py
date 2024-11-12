@@ -27,7 +27,7 @@ for v in range(0,32,2):
 
 
 
-#3. Create a for loop that prints 5 different animals from a list.
+#3. Create a for loop that prints 5 different vegtibles from a list.
 b = ["monkey","cheese","cat","dog","human"]
 for n in b:
     print (n)
