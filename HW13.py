@@ -4,7 +4,7 @@
 
 
 #1. Create a list containing 10 integers of your choice.
-sam = (5, 4, 3, 2, 1, 6, 7, 9, 8, 10)
+sam = (5, 4, 3, 2, 1, 5, 7, 9, 8, 10)
 
 #2. Create two empty variables named evenNumbers and oddNumbers.
 even = 0
@@ -29,4 +29,3 @@ print (f"odd = {odd}")
 
 
 
-print ("sam")
