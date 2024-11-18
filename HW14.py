@@ -6,13 +6,12 @@
 #1. Create a variable that asks the user for an integer and an empty intger variable.
 x = int(input())
 y = 1
-
 #2. Create a loop with a range from 1 to the number the user input.
 for i in range (1,x,y):
     x *= y
     y += 1
     print (x)
-print (x)
+
 
 
 #3. Use the loop to find the factorial of that number. A factorial of a number is that number multiplied

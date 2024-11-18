@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="make up day fix">
-      <change afterPath="$PROJECT_DIR$/HW13.py" afterDir="false" />
+    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW14.py">
+      <change afterPath="$PROJECT_DIR$/4ertgd4we.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW12.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/new stuff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW14.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW14.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +49,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.4ertgd4we.executor": "Run",
     "Python.HW1.executor": "Run",
     "Python.HW10.executor": "Run",
     "Python.HW11.executor": "Run",
     "Python.HW12.executor": "Run",
     "Python.HW13.executor": "Run",
+    "Python.HW14.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
@@ -62,6 +64,9 @@
     "Python.HW7.executor": "Run",
     "Python.HW8.executor": "Run",
     "Python.HW9.executor": "Run",
+    "Python.Scenario 4.executor": "Run",
+    "Python.Seniro 4.executor": "Run",
+    "Python.ewfqaasdv.executor": "Run",
     "Python.hello world.executor": "Run",
     "Python.my stuff.executor": "Run",
     "Python.new stuff.executor": "Run",
@@ -249,7 +254,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731351228694</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="HW13.py">
+      <option name="closed" value="true" />
+      <created>1731438637140</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731438637140</updated>
+    </task>
+    <task id="LOCAL-00022" summary="HW14.py">
+      <option name="closed" value="true" />
+      <created>1731439094843</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1731439094843</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -267,7 +288,9 @@
     <MESSAGE value="added HW8.py" />
     <MESSAGE value="added HW12.py" />
     <MESSAGE value="make up day fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="make up day fix" />
+    <MESSAGE value="HW13.py" />
+    <MESSAGE value="HW14.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW14.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
