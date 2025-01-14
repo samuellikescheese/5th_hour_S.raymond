@@ -7,7 +7,7 @@
 x = int(input())
 y = 1
 #2. Create a loop with a range from 1 to the number the user input.
-for i in range (1,x,y):
+for i in range (1,x):
     x *= y
     y += 1
     print (x)

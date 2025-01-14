@@ -13,19 +13,24 @@ print ("Hello world")
 #Create a while loop that follows the rules of the game.
 #(HINT: Look back to HW6 on how to see if a number is divisible by another)
 x = 0
-while x < 100:
+while x < 1000:
     time.sleep(0.5)
     x += 1
 
-    if x % 3 == 0 and x % 5 == 0:
+    if x % 3 == 0 and x % 5 == 0 and x % 7 == 0:
+        print ("fizzbuzzsam")
+    elif x % 3 == 0 and x % 5 == 0:
         print ("fizzbuzz")
-        continue
-    if x % 3 == 0 :
+    elif x % 5 == 0 and x % 7 == 0:
+        print ("buzzsam")
+    elif x % 3 == 0 and x % 7 == 0:
+        print ("fizzsam")
+    elif x % 3 == 0:
         print ("fizz")
-        continue
-    if x % 5 == 0 :
+    elif x % 5 == 0:
         print ("buzz")
-        continue
+    elif x % 7 == 0:
+        print ("sam")
     else:
         print (x)
 

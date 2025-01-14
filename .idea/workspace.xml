@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW14.py">
-      <change afterPath="$PROJECT_DIR$/4ertgd4we.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
+    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="Scenario rullet.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW11.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW13.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW13.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW14.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scenario 4.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scenario 4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ewfqaasdv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ewfqaasdv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/my stuff.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,7 @@
     "Python.HW12.executor": "Run",
     "Python.HW13.executor": "Run",
     "Python.HW14.executor": "Run",
+    "Python.HW15.executor": "Run",
     "Python.HW2.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
@@ -270,7 +274,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731439094843</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Scenario 4.py.py">
+      <option name="closed" value="true" />
+      <created>1731957529043</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731957529043</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Scenario 4.py">
+      <option name="closed" value="true" />
+      <created>1731957557427</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1731957557427</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Scenario rullet.py">
+      <option name="closed" value="true" />
+      <created>1736277369725</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1736277369725</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,7 +318,10 @@
     <MESSAGE value="make up day fix" />
     <MESSAGE value="HW13.py" />
     <MESSAGE value="HW14.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW14.py" />
+    <MESSAGE value="Scenario 4.py.py" />
+    <MESSAGE value="Scenario 4.py" />
+    <MESSAGE value="Scenario rullet.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scenario rullet.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

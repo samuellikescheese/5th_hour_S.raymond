@@ -1,10 +1,10 @@
 #Name:samuel raymond
 #Class: 5th Hour
 #Assignment: HW13
-
+import random
 
 #1. Create a list containing 10 integers of your choice.
-sam = (5, 4, 3, 2, 1, 5, 7, 9, 8, 10)
+sam = (random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),random.randint(1, 10),)
 
 #2. Create two empty variables named evenNumbers and oddNumbers.
 even = 0

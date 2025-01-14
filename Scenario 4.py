@@ -4,18 +4,24 @@
 import random
 x = 0
 print ("hello world")
-players = int(input(""))
-c = players
-while not players == 0:
-    a = int(input(""))
-    if a > 5 :
-        print ("1 tho 5 stupid")
+while 5 > 3:
+    print ("input how many players you have (more then 0)")
+    players = int(input(""))
+    if players < 1:
+        print ("more then 0 stupid")
         continue
-    players -= 1
-    x += a
-    print (a)
-y = x / c
-print (y)
+    count = players
+    while not players == 0:
+        print ("input your score (1-5)")
+        score = int(input(""))
+        if score > 5 or score < 1 :
+            print ("1 tho 5 stupid")
+            continue
+        players -= 1
+        x += score
+        print (score)
+    y = x / count
+    print (y)
 
 #cheese
 #Scenario 4:
