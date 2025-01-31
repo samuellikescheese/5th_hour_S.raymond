@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW17.py">
-      <change afterPath="$PROJECT_DIR$/HW18.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW19.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/russian rullete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,41 +46,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.4ertgd4we.executor": "Run",
-    "Python.HW1.executor": "Run",
-    "Python.HW10.executor": "Run",
-    "Python.HW11.executor": "Run",
-    "Python.HW12.executor": "Run",
-    "Python.HW13.executor": "Run",
-    "Python.HW14.executor": "Run",
-    "Python.HW15.executor": "Run",
-    "Python.HW16.executor": "Run",
-    "Python.HW17.executor": "Run",
-    "Python.HW18.executor": "Run",
-    "Python.HW2.executor": "Run",
-    "Python.HW3.executor": "Run",
-    "Python.HW4.executor": "Run",
-    "Python.HW5.executor": "Run",
-    "Python.HW6.executor": "Run",
-    "Python.HW7.executor": "Run",
-    "Python.HW8.executor": "Run",
-    "Python.HW9.executor": "Run",
-    "Python.Scenario 4.executor": "Run",
-    "Python.Seniro 4.executor": "Run",
-    "Python.ewfqaasdv.executor": "Run",
-    "Python.hello world.executor": "Run",
-    "Python.my stuff.executor": "Run",
-    "Python.new stuff.executor": "Run",
-    "Python.playground.executor": "Run",
-    "Python.senario 2.executor": "Run",
-    "Python.senario 3.executor": "Run",
-    "Python.senario.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.4ertgd4we.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW13.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW14.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW15.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW16.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW17.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW18.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW8.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HW9.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Scenario 4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Seniro 4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ewfqaasdv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
+    &quot;Python.my stuff.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new stuff.executor&quot;: &quot;Run&quot;,
+    &quot;Python.playground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.russian rullete.executor&quot;: &quot;Run&quot;,
+    &quot;Python.senario 2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.senario 3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.senario.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -336,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737486292579</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="HW17.py">
+      <option name="closed" value="true" />
+      <created>1738176219451</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1738176219451</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -361,7 +371,8 @@
     <MESSAGE value="Scenario rullet.py" />
     <MESSAGE value="HW15.py" />
     <MESSAGE value="HW16.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW16.py" />
+    <MESSAGE value="HW17.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW17.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
