@@ -3,7 +3,7 @@
 #Assignment: HW19
 
 #1. Import all the functions from the HW15 file.
-import HW15
+from HW15 import *
 #2. Call the functions here and run HW19.
 hello_world()
 aver(7,2,5)
