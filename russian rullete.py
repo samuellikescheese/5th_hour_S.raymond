@@ -5,7 +5,7 @@ z = 0
 win = 0
 lose = 0
 play = 3
-bot = 3
+bolt = 3
 def game():
     print ("welcome to russian roulette")
     print ("press 1 to play infinite mode")
@@ -50,15 +50,15 @@ def game():
                     y = x
 #VS bot
     def bot():
-        global bot
+        global bolt
         global play
         global lose
         global win
         print("welcome to VS bot")
-        while not play == 0 or bot == 0:
+        while not play == 0 or bolt == 0:
 
             def player():
-                global bot
+                global bolt
                 global play
                 global lose
                 global win
@@ -72,13 +72,13 @@ def game():
                         print("you died")
                         lose += 1
                         play = 3
-                        bot = 3
+                        bolt = 3
                         print(f"bot has won {lose} times")
                         print(f"you have won {win} times")
                     else:
                         bot()
             def bot():
-                global bot
+                global bolt
                 global play
                 global lose
                 global win
@@ -86,12 +86,12 @@ def game():
                 print("bots turn")
                 if b == 1:
                     print("bot gets shot -1 health")
-                    bot -= 1
-                    if bot == 0:
+                    bolt -= 1
+                    if bolt == 0:
                         print("bot died")
                         win += 1
                         play = 3
-                        bot = 3
+                        bolt = 3
                         print(f"bot has won {lose} times")
                         print(f"you have won {win} times")
             coin = random.randint(1, 2, )
@@ -104,7 +104,7 @@ def game():
     if i == 1:
         infinite()
     elif i == 2:
-        bot()
+        bolt()
 game()
 
 

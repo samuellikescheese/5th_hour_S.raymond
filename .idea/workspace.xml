@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW19.py">
-      <change afterPath="$PROJECT_DIR$/senario 7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/senario6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW19.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW19.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/russian rullete.py" beforeDir="false" afterPath="$PROJECT_DIR$/russian rullete.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,7 @@
     "Python.HW18.executor": "Run",
     "Python.HW19.executor": "Run",
     "Python.HW2.executor": "Run",
+    "Python.HW20.executor": "Run",
     "Python.HW3.executor": "Run",
     "Python.HW4.executor": "Run",
     "Python.HW5.executor": "Run",
@@ -359,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738349545460</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="HW19.py">
+      <option name="closed" value="true" />
+      <created>1739212814271</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1739212814271</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
