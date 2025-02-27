@@ -35,76 +35,18 @@ def game():
                     print ("y = yes")
                     print("n = no")
                     g = input("")
-                    if g == "y":
-                        infinite()
-                    elif g == "n":
+                    if g == "n":
                         game()
                     else:
-                        print ("error")
-                        again()
+                        infinite()
                 again()
-            else :
+            else:
                 x += 1
                 print (f"you survived for the {x} time")
                 if x > y:
                     y = x
 #VS bot
-    def bot():
-        global bolt
-        global play
-        global lose
-        global win
-        print("welcome to VS bot")
-        while not play == 0 or bolt == 0:
 
-            def player():
-                global bolt
-                global play
-                global lose
-                global win
-                a = random.randint(1, 6, )
-                print("your turn")
-                input("")
-                if a == 1:
-                    print("you get shot -1 health")
-                    play -= 1
-                    if play == 0:
-                        print("you died")
-                        lose += 1
-                        play = 3
-                        bolt = 3
-                        print(f"bot has won {lose} times")
-                        print(f"you have won {win} times")
-                    else:
-                        bot()
-            def bot():
-                global bolt
-                global play
-                global lose
-                global win
-                b = random.randint(1, 6, )
-                print("bots turn")
-                if b == 1:
-                    print("bot gets shot -1 health")
-                    bolt -= 1
-                    if bolt == 0:
-                        print("bot died")
-                        win += 1
-                        play = 3
-                        bolt = 3
-                        print(f"bot has won {lose} times")
-                        print(f"you have won {win} times")
-            coin = random.randint(1, 2, )
-            if coin == 1:
-                print("heads")
-                player()
-            if coin == 2:
-                print("tails")
-                bot()
-    if i == 1:
-        infinite()
-    elif i == 2:
-        bolt()
 game()
 
 
