@@ -363,332 +363,169 @@ if goble == 3:
         game_loop()
 if goble == 4:
     import pygame
-    from pygame.locals import *
-    from OpenGL.GL import *
-    from OpenGL.GLUT import *
-    from OpenGL.GLU import *
     import random
-
-    # Define the block data for 3D rendering (represented as cube vertices)
-    vertices = [
-        (1, -1, -1),
-        (1, 1, -1),
-        (-1, 1, -1),
-        (-1, -1, -1),
-        (1, -1, 1),
-        (1, 1, 1),
-        (-1, -1, 1),
-        (-1, 1, 1),
-    ]
-
-    # Define the edges for cube
-    edges = [
-        (0, 1),
-        (1, 2),
-        (2, 3),
-        (3, 0),
-        (4, 5),
-        (5, 6),
-        (6, 7),
-        (7, 4),
-        (0, 4),
-        (1, 5),
-        (2, 6),
-        (3, 7),
-    ]
-
-    # Define the surfaces for cube to apply color to each face
-    surfaces = [
-        (0, 1, 2, 3),
-        (3, 2, 7, 6),
-        (6, 7, 5, 4),
-        (4, 5, 1, 0),
-        (1, 2, 6, 5),
-        (3, 0, 4, 7),
-    ]
-
-    colors = [
-        (1, 0, 0),  # Red
-        (0, 1, 0),  # Green
-        (0, 0, 1),  # Blue
-        (1, 1, 0),  # Yellow
-        (1, 0, 1),  # Magenta
-        (0, 1, 1),  # Cyan
-    ]
-
-
-    # Function to draw a cube with a random color for each face
-    def draw_cube(position):
-        glPushMatrix()
-        glTranslatef(position[0], position[1], position[2])  # Move the cube to the correct position
-        glBegin(GL_QUADS)
-        for i, surface in enumerate(surfaces):
-            glColor3fv(colors[i % len(colors)])  # Assign color to each face
-            for vertex in surface:
-                glVertex3fv(vertices[vertex])
-        glEnd()
-
-        glBegin(GL_LINES)
-        glColor3fv((0, 0, 0))  # Black color for edges
-        for edge in edges:
-            for vertex in edge:
-                glVertex3fv(vertices[vertex])
-        glEnd()
-        glPopMatrix()
-
-
-    # Set up the 3D environment
-    def setup_3d_environment():
-        glClearColor(0.0, 0.0, 0.0, 1.0)
-        glEnable(GL_DEPTH_TEST)
-
-        # Set up perspective projection
-        glMatrixMode(GL_PROJECTION)
-        glLoadIdentity()
-        gluPerspective(45, (800 / 600), 0.1, 50.0)
-        glTranslatef(0.0, 0.0, -5)
-
-
-    # Main game loop for handling input and rendering the world
-    def game_loop():
-        pygame.init()
-        display = (800, 600)
-        pygame.display.set_mode(display, DOUBLEBUF | OPENGL)
-
-        setup_3d_environment()
-
-        blocks = []  # Store placed blocks here
-        block_size = 2  # Size of each block in the 3D world
-
-        # Camera rotation variables
-        x_rotation = 0
-        y_rotation = 0
-        camera_position = [0, 0, -10]  # Initial camera position
-        camera_speed = 0.1
-
-        # Main game loop
-        while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    pygame.quit()
-                    quit()
-
-            keys = pygame.key.get_pressed()
-
-            # Rotate the camera based on arrow keys
-            if keys[K_LEFT]:
-                y_rotation -= 1
-            if keys[K_RIGHT]:
-                y_rotation += 1
-            if keys[K_UP]:
-                x_rotation -= 1
-            if keys[K_DOWN]:
-                x_rotation += 1
-
-            # Move the camera with WASD keys
-            if keys[K_w]:
-                camera_position[2] += camera_speed
-            if keys[K_s]:
-                camera_position[2] -= camera_speed
-            if keys[K_a]:
-                camera_position[0] += camera_speed
-            if keys[K_d]:
-                camera_position[0] -= camera_speed
-
-            # Check for mouse clicks to place blocks
-            if pygame.mouse.get_pressed()[0]:  # Left mouse button
-                mouse_x, mouse_y = pygame.mouse.get_pos()
-                world_x = (mouse_x - 400) / 100.0  # Map mouse position to world coordinates
-                world_y = -(mouse_y - 300) / 100.0
-                # Place the block at the calculated position
-                blocks.append([world_x, world_y, -5])  # Place block at a fixed Z position
-
-            # Clear the screen and set up the camera rotation
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-            glLoadIdentity()
-
-            # Move camera based on position and rotation
-            glTranslatef(camera_position[0], camera_position[1], camera_position[2])
-            glRotatef(x_rotation, 1, 0, 0)  # X-axis rotation
-            glRotatef(y_rotation, 0, 1, 0)  # Y-axis rotation
-
-            # Draw all placed blocks
-            for block in blocks:
-                draw_cube(block)
-
-            pygame.display.flip()
-            pygame.time.wait(10)  # Reduce CPU usage
-
-
-    if __name__ == "__main__":
-        game_loop
-if goble == 4:
-    import pygame
-    from pygame.locals import *
-    from OpenGL.GL import *
-    from OpenGL.GLUT import *
-    from OpenGL.GLU import *
     import math
 
-    # Define the block data for 3D rendering (represented as cube vertices)
-    vertices = [
-        (1, -1, -1),
-        (1, 1, -1),
-        (-1, 1, -1),
-        (-1, -1, -1),
-        (1, -1, 1),
-        (1, 1, 1),
-        (-1, -1, 1),
-        (-1, 1, 1),
-    ]
+    # Initialize pygame
+    pygame.init()
 
-    # Define the edges for cube
-    edges = [
-        (0, 1),
-        (1, 2),
-        (2, 3),
-        (3, 0),
-        (4, 5),
-        (5, 6),
-        (6, 7),
-        (7, 4),
-        (0, 4),
-        (1, 5),
-        (2, 6),
-        (3, 7),
-    ]
+    # Game screen setup
+    WIDTH, HEIGHT = 800, 600
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption("Basketball Game")
 
-    # Define the surfaces for cube to apply color to each face
-    surfaces = [
-        (0, 1, 2, 3),
-        (3, 2, 7, 6),
-        (6, 7, 5, 4),
-        (4, 5, 1, 0),
-        (1, 2, 6, 5),
-        (3, 0, 4, 7),
-    ]
+    # Colors
+    WHITE = (255, 255, 255)
+    BLACK = (0, 0, 0)
+    RED = (255, 0, 0)
+    GREEN = (0, 255, 0)
+    BLUE = (0, 0, 255)
+    YELLOW = (255, 255, 0)
 
-    colors = [
-        (1, 0, 0),  # Red
-        (0, 1, 0),  # Green
-        (0, 0, 1),  # Blue
-        (1, 1, 0),  # Yellow
-        (1, 0, 1),  # Magenta
-        (0, 1, 1),  # Cyan
-    ]
+    # Game Clock
+    clock = pygame.time.Clock()
 
+    # Player settings
+    player_width = 50
+    player_height = 50
+    player_x = WIDTH // 2 - player_width // 2
+    player_y = HEIGHT - player_height - 10
+    player_speed = 7
 
-    # Function to draw a cube with a random color for each face
-    def draw_cube(position):
-        glPushMatrix()
-        glTranslatef(position[0], position[1], position[2])  # Move the cube to the correct position
-        glBegin(GL_QUADS)
-        for i, surface in enumerate(surfaces):
-            glColor3fv(colors[i % len(colors)])  # Assign color to each face
-            for vertex in surface:
-                glVertex3fv(vertices[vertex])
-        glEnd()
+    # Ball settings
+    ball_radius = 15
+    ball_x = player_x + player_width // 2
+    ball_y = player_y - ball_radius
+    ball_velocity = [0, 0]
+    shooting = False
+    gravity = 0.5
+    bounce_factor = 0.7
 
-        glBegin(GL_LINES)
-        glColor3fv((0, 0, 0))  # Black color for edges
-        for edge in edges:
-            for vertex in edge:
-                glVertex3fv(vertices[vertex])
-        glEnd()
-        glPopMatrix()
+    # Hoop settings
+    hoop_width = 100
+    hoop_height = 20
+    hoop_x = random.randint(0, WIDTH - hoop_width)
+    hoop_y = 100
+    hoop_speed = 5
+
+    # Score settings
+    score = 0
+    font = pygame.font.SysFont("Arial", 30)
+
+    # Load Sounds
+    shoot_sound = pygame.mixer.Sound('shoot.wav')
+    score_sound = pygame.mixer.Sound('score.wav')
+    bounce_sound = pygame.mixer.Sound('bounce.wav')
+
+    # Background
+    background = pygame.Surface((WIDTH, HEIGHT))
+    background.fill(WHITE)
 
 
-    # Set up the 3D environment
-    def setup_3d_environment():
-        glClearColor(0.0, 0.0, 0.0, 1.0)
-        glEnable(GL_DEPTH_TEST)
-
-        # Set up perspective projection
-        glMatrixMode(GL_PROJECTION)
-        glLoadIdentity()
-        gluPerspective(45, (800 / 600), 0.1, 50.0)
-        glTranslatef(0.0, 0.0, -15)
+    # Draw Score
+    def draw_score():
+        score_text = font.render(f"Score: {score}", True, BLACK)
+        screen.blit(score_text, (10, 10))
 
 
-    # Convert screen coordinates to 3D world coordinates for placing blocks
-    def screen_to_world(x, y):
-        # Convert from screen space to normalized device coordinates (-1 to 1)
-        normalized_x = (x / 400.0) - 1
-        normalized_y = -((y / 300.0) - 1)
-        return normalized_x, normalized_y, -5  # Fixed Z value to place blocks on the "ground"
+    # Draw player
+    def draw_player():
+        pygame.draw.rect(screen, GREEN, (player_x, player_y, player_width, player_height))
 
 
-    # Main game loop for handling input and rendering the world
-    def game_loop():
-        pygame.init()
-        display = (800, 600)
-        pygame.display.set_mode(display, DOUBLEBUF | OPENGL)
+    # Draw the ball
+    def draw_ball():
+        pygame.draw.circle(screen, RED, (ball_x, ball_y), ball_radius)
 
-        setup_3d_environment()
 
-        blocks = []  # Store placed blocks here
+    # Draw the hoop
+    def draw_hoop():
+        pygame.draw.rect(screen, BLUE, (hoop_x, hoop_y, hoop_width, hoop_height))
 
-        # Camera rotation variables
-        x_rotation = 0
-        y_rotation = 0
-        camera_position = [0, 0, -15]  # Initial camera position
-        camera_speed = 0.1
 
-        # Main game loop
+    # Handle player movement
+    def handle_player_movement(keys):
+        global player_x
+        if keys[pygame.K_LEFT] and player_x > 0:
+            player_x -= player_speed
+        if keys[pygame.K_RIGHT] and player_x < WIDTH - player_width:
+            player_x += player_speed
+
+
+    # Shoot ball with better control
+    def shoot_ball():
+        global ball_x, ball_y, ball_velocity, shooting
+        if shooting:
+            ball_velocity[1] += gravity  # Apply gravity
+            ball_x += ball_velocity[0]
+            ball_y += ball_velocity[1]
+
+            # Ball hits the floor
+            if ball_y > HEIGHT - ball_radius:
+                ball_y = HEIGHT - ball_radius
+                ball_velocity[1] = -ball_velocity[1] * bounce_factor
+                bounce_sound.play()
+
+            # Ball reaches the hoop
+            if hoop_x <= ball_x <= hoop_x + hoop_width and hoop_y <= ball_y <= hoop_y + hoop_height:
+                score_sound.play()
+                return True
+        return False
+
+
+    # Move the hoop back and forth
+    def move_hoop():
+        global hoop_x, hoop_speed
+        hoop_x += hoop_speed
+        if hoop_x <= 0 or hoop_x >= WIDTH - hoop_width:
+            hoop_speed = -hoop_speed
+
+
+    # Main game loop
+    def main():
+        global shooting, ball_x, ball_y, ball_velocity, hoop_x, score
         while True:
+            screen.blit(background, (0, 0))
+
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
-                    quit()
+                    return
+                elif event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE and not shooting:
+                        shooting = True
+                        ball_velocity = [random.randint(-5, 5), -15]  # Random initial velocity
+                        shoot_sound.play()
 
+            # Player movement
             keys = pygame.key.get_pressed()
+            handle_player_movement(keys)
 
-            # Rotate the camera based on arrow keys
-            if keys[K_LEFT]:
-                y_rotation -= 1
-            if keys[K_RIGHT]:
-                y_rotation += 1
-            if keys[K_UP]:
-                x_rotation -= 1
-            if keys[K_DOWN]:
-                x_rotation += 1
+            # Check for ball shooting and score
+            if shooting:
+                if shoot_ball():
+                    score += 1
+                    shooting = False
+                    ball_x = player_x + player_width // 2
+                    ball_y = player_y - ball_radius
+                    ball_velocity = [0, 0]
 
-            # Move the camera with WASD keys
-            if keys[K_w]:
-                camera_position[2] += camera_speed
-            if keys[K_s]:
-                camera_position[2] -= camera_speed
-            if keys[K_a]:
-                camera_position[0] += camera_speed
-            if keys[K_d]:
-                camera_position[0] -= camera_speed
+            # Move hoop
+            move_hoop()
 
-            # Check for mouse clicks to place blocks
-            if pygame.mouse.get_pressed()[0]:  # Left mouse button
-                mouse_x, mouse_y = pygame.mouse.get_pos()
-                world_x, world_y, world_z = screen_to_world(mouse_x, mouse_y)
-                # Place the block at the calculated position
-                blocks.append([world_x, world_y, world_z])  # Place block at a fixed Z position
+            # Draw everything
+            draw_score()
+            draw_player()
+            draw_ball()
+            draw_hoop()
 
-            # Clear the screen and set up the camera rotation
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
-            glLoadIdentity()
-
-            # Move camera based on position and rotation
-            glTranslatef(camera_position[0], camera_position[1], camera_position[2])
-            glRotatef(x_rotation, 1, 0, 0)  # X-axis rotation
-            glRotatef(y_rotation, 0, 1, 0)  # Y-axis rotation
-
-            # Draw all placed blocks
-            for block in blocks:
-                draw_cube(block)
-
-            pygame.display.flip()
-            pygame.time.wait(10)  # Reduce CPU usage
+            pygame.display.update()
+            clock.tick(60)
 
 
+    # Start the game
     if __name__ == "__main__":
-        game_loop()
+        main()
 
 
 
