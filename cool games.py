@@ -23,10 +23,10 @@ def dice() :
     a4 = random.randint(1, 6, )
     a5 = random.randint(1, 6, )
     if x == "p":
-        print (f"nothing = {nothing}")
         print (f"double = {double}")
         print (f'double,double = {doubledouble}')
         print (f"triple = {triple}")
+        print (f"nothing = {nothing}")
         print (f"triple,double = {tripledouble}")
         print (f"quadruple = {quadruple}")
         print (f"quintuple = {quintuple}")
