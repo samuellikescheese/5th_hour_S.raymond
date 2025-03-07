@@ -29,4 +29,7 @@ stock(self=1)
 print (raiseeens.stock)
 #6. Delete the first store item and then attempt to print the weight of the first store item. Create a try/except catch to fix the error.
 del banana
-try print (banana.weight)
+try:
+    print (banana.weight)
+except:
+    print ("cheese")

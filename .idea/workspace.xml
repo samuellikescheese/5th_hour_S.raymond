@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW19.py">
-      <change afterPath="$PROJECT_DIR$/HW22.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cool games.py" beforeDir="false" afterPath="$PROJECT_DIR$/cool games.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ewfqaasdv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ewfqaasdv.py" afterDir="false" />
-    </list>
+    <list default="true" id="a968ec11-f0b5-4cc4-ade3-f29c507bba2c" name="Changes" comment="HW19.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -412,7 +407,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741029146412</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="HW19.py">
+      <option name="closed" value="true" />
+      <created>1741288648336</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1741288648336</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
