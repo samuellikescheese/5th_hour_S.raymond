@@ -8,6 +8,10 @@ class items:
         self.stock = stock
         self.weight = weight
         self.cost = cost
+
+    def xcost2(self):
+        applesauce.cost *= 2
+
 #2. Make 3 objects to serve as your store items and give them values to those 3 attributes defined in the class.
 banana = items(2000, 5, 2)
 applesauce = items(50, 10, 500)
@@ -18,14 +22,10 @@ print (applesauce.stock)
 print (raiseeens.stock)
 print (applesauce.cost)
 #4. Make a def function within the class that doubles the cost an item, double the cost of the second store item, and print the new cost below the original cost print statement.
-def cost(self):
-    applesauce.cost *= 2
-cost(self=1)
+applesauce.xcost2()
 print (applesauce.cost)
 #5. Directly change the stock of the third store item to approx. 1/4th the original stock and then print the new stock amount.
-def stock(self):
-    raiseeens.stock /= 4
-stock(self=1)
+raiseeens.stock /= 4
 print (raiseeens.stock)
 #6. Delete the first store item and then attempt to print the weight of the first store item. Create a try/except catch to fix the error.
 del banana
